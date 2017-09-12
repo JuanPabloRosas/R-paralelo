@@ -1,0 +1,138 @@
+resultados = read.csv("d_resultados.csv", sep=",", header=TRUE)
+tiempos = read.csv("d_tiempos.csv", sep=",", header=TRUE)
+
+
+resultados1 = read.csv("Resultados/1_resultados.csv", sep=",", header=TRUE)
+tiempos1 = read.csv("Tiempos/1_tiempos.csv", sep=",", header=TRUE)
+
+resultados2 = read.csv("Resultados/2_resultados.csv", sep=",", header=TRUE)
+tiempos2 = read.csv("Tiempos/2_tiempos.csv", sep=",", header=TRUE)
+
+resultados3 = read.csv("Resultados/3_resultados.csv", sep=",", header=TRUE)
+tiempos3 = read.csv("Tiempos/3_tiempos.csv", sep=",", header=TRUE)
+
+resultados4 = read.csv("Resultados/4_resultados.csv", sep=",", header=TRUE)
+tiempos4 = read.csv("Tiempos/4_tiempos.csv", sep=",", header=TRUE)
+
+resultados5 = read.csv("Resultados/5_resultados.csv", sep=",", header=TRUE)
+tiempos5 = read.csv("Tiempos/5_tiempos.csv", sep=",", header=TRUE)
+
+resultados6 = read.csv("Resultados/6_resultados.csv", sep=",", header=TRUE)
+tiempos6 = read.csv("Tiempos/6_tiempos.csv", sep=",", header=TRUE)
+
+resultados7 = read.csv("Resultados/7_resultados.csv", sep=",", header=TRUE)
+tiempos7 = read.csv("Tiempos/7_tiempos.csv", sep=",", header=TRUE)
+
+resultados8 = read.csv("Resultados/8_resultados.csv", sep=",", header=TRUE)
+tiempos8 = read.csv("Tiempos/8_tiempos.csv", sep=",", header=TRUE)
+
+resultados9 = read.csv("Resultados/9_resultados.csv", sep=",", header=TRUE)
+tiempos9 = read.csv("Tiempos/9_tiempos.csv", sep=",", header=TRUE)
+
+resultados10 = read.csv("Resultados/10_resultados.csv", sep=",", header=TRUE)
+tiempos10 = read.csv("Tiempos/10_tiempos.csv", sep=",", header=TRUE)
+
+
+png("Resultados.png")
+resultados <- t(resultados)
+boxplot(resultados,ylab="Valor", xlab="Tamaño de la muestra", main="Resultados")
+legend("topright", "0.048834", pch = "--", title = "Valor de Wolfram Alpha", col ="red")
+abline(h=0.048834, col="Red")
+
+png("Tiempos.png")
+tiempos <- t(tiempos)
+boxplot(tiempos,ylab="Tiempos(s)", xlab="Tamaño de la muestra", main="Tiempos")
+
+graphics.off()
+
+x_range <-c(1:100)
+
+png("Resultados/1_Resultados.png")
+plot(x_range, resultados1$res, type="o", ylab="Valor", xlab="Repeticiones", main=paste("Resultados",1 ), ylim = c(0.04865,    0.0493))
+legend("topright", "0.048834", pch = "--", title = "Valor de Wolfram Alpha", col ="red")
+abline(h=0.048834, col="Red")
+graphics.off()
+png("Tiempos/1_Tiempos.png")
+plot(x_range, tiempos1$tiempo, type="l", ylab="Tiempo", xlab="Repeticiones", main=paste("Tiempos", 1) ,ylim = c(0,25))
+graphics.off()
+
+png("Resultados/2_Resultados.png")
+plot(x_range, resultados2$res, type="o", ylab="Valor", xlab="Repeticiones", main=paste("Resultados",2 ), ylim = c(0.04865,    0.0493))
+legend("topright", "0.048834", pch = "--", title = "Valor de Wolfram Alpha", col ="red")
+abline(h=0.048834, col="Red")
+graphics.off()
+png("Tiempos/2_Tiempos.png")
+plot(x_range, tiempos2$tiempo, type="l", ylab="Tiempo", xlab="Repeticiones", main=paste("Tiempos", 2) ,ylim = c(0,25))
+graphics.off()
+
+png("Resultados/3_Resultados.png")
+plot(x_range, resultados3$res, type="o", ylab="Valor", xlab="Repeticiones", main=paste("Resultados",3 ), ylim = c(0.04865,    0.0493))
+legend("topright", "0.048834", pch = "--", title = "Valor de Wolfram Alpha", col ="red")
+abline(h=0.048834, col="Red")
+graphics.off()
+png("Tiempos/3_Tiempos.png")
+plot(x_range, tiempos3$tiempo, type="l", ylab="Tiempo", xlab="Repeticiones", main=paste("Tiempos", 3) ,ylim = c(0,25))
+graphics.off()
+
+png("Resultados/4_Resultados.png")
+plot(x_range, resultados4$res, type="o", ylab="Valor", xlab="Repeticiones", main=paste("Resultados",4 ), ylim = c(0.04865,    0.0493))
+legend("topright", "0.048834", pch = "--", title = "Valor de Wolfram Alpha", col ="red")
+abline(h=0.048834, col="Red")
+graphics.off()
+png("Tiempos/4_Tiempos.png")
+plot(x_range, tiempos4$tiempo, type="l", ylab="Tiempo", xlab="Repeticiones", main=paste("Tiempos", 4) ,ylim = c(0,25))
+graphics.off()
+
+png("Resultados/5_Resultados.png")
+plot(x_range, resultados5$res, type="o", ylab="Valor", xlab="Repeticiones", main=paste("Resultados",5 ), ylim = c(0.04865,    0.0493))
+legend("topright", "0.048834", pch = "--", title = "Valor de Wolfram Alpha", col ="red")
+abline(h=0.048834, col="Red")
+graphics.off()
+png("Tiempos/5_Tiempos.png")
+plot(x_range, tiempos5$tiempo, type="l", ylab="Tiempo", xlab="Repeticiones", main=paste("Tiempos", 5) ,ylim = c(0,25))
+graphics.off()
+
+png("Resultados/6_Resultados.png")
+plot(x_range, resultados6$res, type="o", ylab="Valor", xlab="Repeticiones", main=paste("Resultados",6 ), ylim = c(0.04865,    0.0493))
+legend("topright", "0.048834", pch = "--", title = "Valor de Wolfram Alpha", col ="red")
+abline(h=0.048834, col="Red")
+graphics.off()
+png("Tiempos/6_Tiempos.png")
+plot(x_range, tiempos6$tiempo, type="l", ylab="Tiempo", xlab="Repeticiones", main=paste("Tiempos", 6) ,ylim = c(0,25))
+graphics.off()
+
+png("Resultados/7_Resultados.png")
+plot(x_range, resultados7$res, type="o", ylab="Valor", xlab="Repeticiones", main=paste("Resultados",7 ), ylim = c(0.04865,    0.0493))
+legend("topright", "0.048834", pch = "--", title = "Valor de Wolfram Alpha", col ="red")
+abline(h=0.048834, col="Red")
+graphics.off()
+png("Tiempos/7_Tiempos.png")
+plot(x_range, tiempos7$tiempo, type="l", ylab="Tiempo", xlab="Repeticiones", main=paste("Tiempos", 7) ,ylim = c(0,25))
+graphics.off()
+
+png("Resultados/8_Resultados.png")
+plot(x_range, resultados8$res, type="o", ylab="Valor", xlab="Repeticiones", main=paste("Resultados",8 ), ylim = c(0.04865,    0.0493))
+legend("topright", "0.048834", pch = "--", title = "Valor de Wolfram Alpha", col ="red")
+abline(h=0.048834, col="Red")
+graphics.off()
+png("Tiempos/8_Tiempos.png")
+plot(x_range, tiempos8$tiempo, type="l", ylab="Tiempo", xlab="Repeticiones", main=paste("Tiempos", 8) ,ylim = c(0,25))
+graphics.off()
+
+png("Resultados/9_Resultados.png")
+plot(x_range, resultados9$res, type="o", ylab="Valor", xlab="Repeticiones", main=paste("Resultados",9 ), ylim = c(0.04865,    0.0493))
+legend("topright", "0.048834", pch = "--", title = "Valor de Wolfram Alpha", col ="red")
+abline(h=0.048834, col="Red")
+graphics.off()
+png("Tiempos/9_Tiempos.png")
+plot(x_range, tiempos9$tiempo, type="l", ylab="Tiempo", xlab="Repeticiones", main=paste("Tiempos", 9) ,ylim = c(0,25))
+graphics.off()
+
+png("Resultados/10_Resultados.png")
+plot(x_range, resultados10$res, type="o", ylab="Valor", xlab="Repeticiones", main=paste("Resultados",10 ), ylim = c(0.04865,    0.0493))
+legend("topright", "0.048834", pch = "--", title = "Valor de Wolfram Alpha", col ="red")
+abline(h=0.048834, col="Red")
+graphics.off()
+png("Tiempos/10_Tiempos.png")
+plot(x_range, tiempos10$tiempo, type="l", ylab="Tiempo", xlab="Repeticiones", main=paste("Tiempos", 10) ,ylim = c(0,25))
+graphics.off()
