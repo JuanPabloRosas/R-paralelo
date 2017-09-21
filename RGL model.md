@@ -1,3 +1,5 @@
+http://htmlpreview.github.io/?https://github.com/JuanPabloRosas/R-paralelo/blob/master/RGL%20model.html
+
 <html><head>
 <meta http-equiv="content-type" content="text/html; charset=windows-1252">
 	<title>RGL model</title>
